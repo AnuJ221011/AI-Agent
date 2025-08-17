@@ -53,16 +53,15 @@ Once running, you can ask:
 
 Ask me anything---> sum of 10 and 20
 Calling function for help: sum
-30
+The sum of 10 and 20 is 30.
 
 Ask me anything---> is 13 prime?
 Calling function for help: prime
-true
-
+Yes, 13 is a prime number.
 
 Ask me anything---> get price of bitcoin
 Calling function for help: getCryptoPrice
-[ { id: 'bitcoin', symbol: 'btc', name: 'Bitcoin', current_price: 60000, ... } ]
+The current price of Bitcoin is 117898.00 USD
 
 
 ## Project Structure
