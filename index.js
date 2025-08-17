@@ -95,6 +95,11 @@ async function runAgent(userProblem){
             model: "gemini-2.5-flash",
             contents: History,
             config: {
+                systemInstruction: `You are an AI Agent, you have access of 3 available tools likes
+                to find sum of two numbers, to check if a number is prime or not and to get the current price of a crypto currency like Bitcoin.
+                
+                Use these tools whenever required to confirm user query.
+                If user ask general question you can answer it directly if you don't need help of these 3 tools`,
                 tools: [{
                     functionDeclarations: [sumDeclaration , primeDeclaration , cryptoDeclaration],
                 }],
